@@ -397,3 +397,74 @@ footer h2::before {
 .contact-item i {
     font-size: 1.5rem;
 }
+
+/* Adicione este código ao final do seu style.css */
+
+/* --- SEÇÃO EXPERIÊNCIA PROFISSIONAL --- */
+.experience-section {
+    margin-top: 80px; /* Espaçamento acima da nova seção */
+}
+
+.experience-timeline {
+    margin-top: 30px;
+    border-left: 3px solid #374151; /* Linha da timeline */
+    padding-left: 30px;
+}
+
+.experience-item {
+    position: relative;
+    padding-bottom: 40px; /* Espaço entre os itens da experiência */
+}
+
+/* Cria a bolinha na linha do tempo */
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -38px; /* Posição da bolinha na linha */
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #60A5FA; /* Azul médio */
+    border-radius: 50%;
+    border: 2px solid #111827; /* Cor de fundo do body */
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap; /* Permite quebrar a linha em telas pequenas */
+    gap: 10px;
+}
+
+.experience-item h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.experience-dates {
+    font-size: 0.9rem;
+    color: #93C5FD; /* Azul claro */
+    background-color: #1F2937; /* Fundo para destacar a data */
+    padding: 3px 8px;
+    border-radius: 4px;
+    flex-shrink: 0; /* Impede que a data encolha */
+}
+
+.experience-description {
+    margin-top: 10px;
+}
+
+.experience-description p, 
+.experience-description ul {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #d0d0d0;
+    margin: 0;
+}
+
+.experience-description ul {
+    padding-left: 20px; /* Espaçamento interno da lista */
+    list-style-type: '•  '; /* Define um marcador personalizado */
+}
