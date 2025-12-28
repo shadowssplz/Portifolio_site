@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Meu Portfólio - Pedro Cruz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Ajuste global para garantir que ícones de diferentes proporções não distorçam */
+        .skill-icon {
+            object-fit: contain;
+            background-color: transparent;
+        }
+    </style>
 </head>
 <body>
 
@@ -133,11 +140,13 @@
                 <h3>Iniciante N8N</h3>
                 <p>Conhecimento iniciante em criação e manuntenção de workflows para atendimentos, segmentação e classificação de bases de dados.</p>
             </div>
+            
             <div class="skill-card">
-                <img src="img/imagens/nekt_logo.png" alt="Ícone da Nekt" class="skill-icon">
+                <img src="img/imagens/nekt_logo.png" alt="Ícone da Nekt" class="skill-icon" style="width: auto; max-width: 100%;">
                 <h3>NEKT</h3>
                 <p>Faço a conexão, ETL, extração do dado e envio para o visualizador.</p>
             </div>
+
             <div class="skill-card">
                 <img src="img/imagens/salesforce_logo.png" alt="Ícone do Salesforce" class="skill-icon">
                 <h3>SALESFORCE MARKETING CLOUD</h3>
@@ -185,7 +194,9 @@
         <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i>
     </a>
 </div>
-    </section> <section id="servicos">
+    </section>
+
+    <section id="servicos">
         <h2>Os serviços que eu ofereço:</h2>
         <div class="services-grid">
             <div class="service-card">
@@ -223,7 +234,9 @@
         </a>
     </div>
 </footer>
+
 <script>
+    // Função principal que controla a rolagem suave
     function smoothScroll(targetSelector, duration) {
         const target = document.querySelector(targetSelector);
         if (!target) return;
@@ -251,6 +264,7 @@
         requestAnimationFrame(animation);
     }
 
+    // Eventos de clique para navegação
     document.querySelectorAll('.main-nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -259,7 +273,7 @@
         });
     });
 
-    const projectsButton = document.querySelector('.projects-button a[href^="#"], .projects-button[href^="#"]');
+    const projectsButton = document.querySelector('.projects-button[href^="#"]');
     if(projectsButton) {
         projectsButton.addEventListener('click', function(e) {
             e.preventDefault();
@@ -268,5 +282,6 @@
         });
     }
 </script>
+
 </body>
 </html>
