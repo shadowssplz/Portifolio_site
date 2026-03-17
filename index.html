@@ -22,13 +22,22 @@
         }
 
         .skill-card {
-            /* O flex-basis define a largura ideal do card. 
-               Ajuste o valor de 280px para o que ficar melhor no seu layout original */
             flex: 0 1 280px; 
             display: flex;
             flex-direction: column;
             align-items: center; /* Centraliza o conteúdo dentro do card */
             text-align: center;
+        }
+
+        /* Destaque para a frase de evolução */
+        .evolution-badge {
+            background: rgba(59, 130, 246, 0.15);
+            padding: 12px;
+            border-left: 4px solid #3B82F6;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: #BFDBFE;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -42,8 +51,14 @@
         <div class="intro-text-container">
             <p class="greeting">oi! Meu nome é</p>
             <h1>Pedro Cruz</h1>
-            <p class="job-title">Analista de dados voltado a inteligência de Negócio e CRM</p>
-            <p>Desenvolvo dashboards interativos, análises de base de dados, automações de processos e funções manuais para diferentes áreas de negócio.</p>
+            <p class="job-title">Cientista de Dados | BI & CRM Intelligence</p>
+            <p>Desenvolvo dashboards interativos, análises exploratórias de dados (EDA), automações de processos e integrações com LLMs para otimização de negócios.</p>
+            
+            <div class="evolution-badge">
+                <i class="fa-solid fa-rocket"></i> 
+                Tenho grande vontade para aprender, otimizar processos e evoluir conforme as demandas técnicas da vaga.
+            </div>
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -64,13 +79,13 @@
         <div class="experience-container">
             <div class="experience-years">4+</div>
             <div class="experience-details">
-                <p>Anos na tecnologia com foco em dados e automações, com experiência em desenvolvimento de bots, manipulação de dados e visualizações com Power BI. Atuo com Python, SQL, Excel avançado e Power BI, além de conhecimentos em ferramentas de marketing como Marketing Cloud. Tenho formação em Ciência da Computação pelo IFCE e autodidata em habilidades voltadas para Business Intelligence, Machine Learning e Visualização de Dados. Atualmente, estou em constante desenvolvimento e busco atuar em projetos que unam tecnologia, análise e impacto estratégico para os negócios.</p>
+                <p>Anos na tecnologia com foco em dados e automações, com sólida experiência em manipulação de dados e visualizações. Atuo com Python, SQL e Power BI, desenvolvendo habilidades voltadas para Business Intelligence, <strong>Análise Exploratória (EDA)</strong> e Machine Learning. Sou formado em Ciência da Computação pelo IFCE e busco constantemente integrar <strong>Inteligência Artificial e LLMs</strong> para gerar impacto estratégico e otimizar resultados de negócio.</p>
             </div>
         </div>
 
         <div class="experience-section">
             <h2>Experiência Profissional</h2>
-            <p class="section-subtitle">Minha carreira profissional foi marcada por uma variedade de experiências que me ajudaram a construir uma base sólida em análise de dados e CRM:</p>
+            <p class="section-subtitle">Minha carreira profissional é focada em transformar dados em inteligência de mercado:</p>
             
             <div class="experience-timeline">
                 
@@ -80,17 +95,17 @@
                         <span class="experience-dates">Jul. 2025 - Atualmente</span>
                     </div>
                     <div class="experience-description">
-                        <p>Atuação focada na área de tráfego pago, sendo responsável pela elaboração de relatórios de fluxo de funil, estruturação de planilhas para consolidação de dados, processos de extração e limpeza de dados (ETL) e desenvolvimento de painéis de dashboards para acompanhamento de métricas.</p>
+                        <p>Responsável por processos de ETL, limpeza de dados e análise exploratória para consolidação de métricas de funil, visando a otimização de campanhas através de dashboards preditivos.</p>
                     </div>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Analista Dados e CRM Marketing | Grupo Super MiniBox - efetivado</h3>
+                        <h3>Analista Dados e CRM Marketing | Grupo Super MiniBox</h3>
                         <span class="experience-dates">Out. 2024 - Mar. 2025</span>
                     </div>
                     <div class="experience-description">
-                            <p>Aqui, aplico minhas habilidades em segmentação de público, gestão de campanhas para maximizar o engajamento dos clientes e a criação de relatórios e estudos para melhorarmos nossas métricas.</p>
+                            <p>Segmentação de público e gestão de campanhas baseada em dados, criando estudos de comportamento do consumidor para maximizar engajamento.</p>
                     </div>
                 </div>
 
@@ -100,79 +115,38 @@
                         <span class="experience-dates">Jul. 2024 - Nov. 2024</span>
                     </div>
                     <div class="experience-description">
-                        <p>A experiência como Hunter de leads me ensinou a importância da análise de mercado e da estratégia de vendas, habilidades com o atendimento dos cliente. Assim, criei base de dados segmentadas para melhor remarketing de vendas, criando automações para conversão de compras (BOT próprio e N8N Workflow).</p>
+                        <p>Desenvolvimento de automações (Bots e N8N) para conversão de vendas e estruturação de bases de dados para remarketing estratégico.</p>
                     </div>
                 </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Analista em CRM Marketing | GEN - Grupo Editorial Nacional (Remoto) - estágio</h3>
-                        <span class="experience-dates">Out. 2023 - Jun. 2024</span>
-                    </div>
-                    <div class="experience-description">
-                            <p>Aqui, apliquei minhas habilidades em segmentação de público e gestão de campanhas para maximizar o engajamento dos clientes. </p>
-                    </div>
+                
                 </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Desenvolvedor de Bots (Python) - freelancer</h3>
-                    </div>
-                    <div class="experience-description">
-                            <p>Trabalhei de forma independente na criação de bots automatizados para marketing, uma experiência que reforçou meu domínio em Python e automação.</p>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Analista em Business Intelligence | LL Loyalty (Remoto) - estágio</h3>
-                        <span class="experience-dates">Mar. 2022 - Jun. 2023</span>
-                    </div>
-                    <div class="experience-description">
-                            <p>Como estagiário, fui responsável por coletar, analisar e reportar dados críticos que ajudaram a equipe a tomar decisões estratégicas informadas. Com isso participei de todos os projetos da área, tendo em vista a documentação do projeto, homologação de erros, análises, ETL e estudos para melhorias e inovações. </p>
-                    </div>
-                </div>
-
-            </div>
         </div>
 
         <h2>Principais habilidades</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <img src="img/imagens/grafic figma.png" alt="Ícone de Gráfico de Pizza" class="skill-icon">
-                <h3>VISUALIZAÇÃO & ANÁLISE DE DADOS</h3>
-                <p>Desenvolvimento de dashboards através de ferramentas como: Power BI, Excel, Python e SQL.</p>
+                <img src="img/imagens/grafic figma.png" alt="Análise de Dados" class="skill-icon">
+                <h3>DATA SCIENCE & EDA</h3>
+                <p>Análise exploratória de dados e modelagem estatística com Python (Pandas, Numpy) e SQL.</p>
             </div>
             <div class="skill-card">
-                <img src="img/imagens/Design figma.png" alt="Ícone de Design" class="skill-icon">
-                <h3>DESIGN DE DASHBOARDS</h3>
-                <p>Aplicação do Figma ou Power Point para elaborar layouts para projetos de Business Intelligence.</p>
+                <img src="img/imagens/n8n figma.png" alt="Automação" class="skill-icon n8n-icon">
+                <h3>IA & AUTOMAÇÃO</h3>
+                <p>Integração de LLMs, criação de prompts e workflows automatizados no N8N para escala de processos.</p>
             </div>
             <div class="skill-card">
-                <img src="img/imagens/Excel figma.png" alt="Ícone do Excel" class="skill-icon">
-                <h3>Automação VBA</h3>
-                <p>Implementação de scripts (Visual Basic) para otimização de processos logísticos e extração e dados.</p>
+                <img src="img/imagens/Excel figma.png" alt="Excel" class="skill-icon">
+                <h3>PROGRAMAÇÃO & ETL</h3>
+                <p>Desenvolvimento de scripts para limpeza, tratamento e extração de dados em diferentes ambientes.</p>
             </div>
             <div class="skill-card">
-                <img src="img/imagens/n8n figma.png" alt="Ícone do N8N" class="skill-icon n8n-icon">
-                <h3>Iniciante N8N</h3>
-                <p>Conhecimento iniciante em criação e manuntenção de workflows para atendimentos, segmentação e classificação de bases de dados.</p>
-            </div>
-            
-            <div class="skill-card">
-                <img src="img/imagens/nekt_logo.png" alt="Ícone da Nekt" class="skill-icon" style="width: auto; max-width: 100%;">
-                <h3>NEKT</h3>
-                <p>Faço a conexão, ETL, extração do dado e envio para o visualizador.</p>
-            </div>
-
-            <div class="skill-card">
-                <img src="img/imagens/salesforce_logo2.png" alt="Ícone do Salesforce" class="skill-icon" style="width: auto; max-width: 100%;">
-                <h3>SALESFORCE MARKETING CLOUD</h3>
-                <p>Possuo habilidades na plataforma Salesforce Marketing Cloud para segmentação de clientes, envio de emails e testes.</p>
+                <img src="img/imagens/Design figma.png" alt="Visualização" class="skill-icon">
+                <h3>VISUALIZAÇÃO DE DADOS</h3>
+                <p>Design de dashboards de alto impacto utilizando Power BI e Figma para facilitar a leitura de KPIs.</p>
             </div>
         </div>
         
-        <div class="projects-button-container"style="margin-top: 40px;">
+        <div class="projects-button-container" style="margin-top: 40px;">
             <a href="#projetos" class="projects-button">
                 <i class="fa-solid fa-eye"></i>
                 Clique aqui para visualizar os meus projetos
@@ -181,58 +155,58 @@
     </section>
 
     <section id="projetos">
-        <h2>Projetos</h2>
+        <h2>Projetos em Destaque</h2>
         <div class="project-grid">
 
             <div class="project-card">
                 <img src="img/imagens/dashboard_comercial 1.png" alt="Dashboard Comercial" class="project-image">
                 <h3>DASHBOARD COMERCIAL</h3>
-                <p>Acompanhar a receita longo do tempo, mostrar o desempenho por lojas, a fim de entendermos melhor como o aplicativo se comporta.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiY2NjNDg1ZmQtZmYxMC00MDhhLTllNDYtZjJiNjE1ZTBiNWU0IiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9"target="_blank">Ver detalhes</a>
+                <p>Análise de performance e receita para identificação de tendências de mercado e comportamento de compra.</p>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiY2NjNDg1ZmQtZmYxMC00MDhhLTllNDYtZjJiNjE1ZTBiNWU0IiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
             </div>
 
             <div class="project-card">
                 <img src="img/imagens/Dashboard_Logistica 1.png" alt="Dashboard de Logística" class="project-image">
                 <h3>DASHBOARD DE LOGÍSTICA</h3>
-                <p>Monitorar os indicadores OTIF (On Time in Full) ao longo do tempo, performance das lojas (supermercados) de acordo com a região e mais.</p>
-                <a href="https://app.powerbi.com/groups/me/reports/e5aa379f-d46c-46f5-b51d-5b62471b6de1/224b5a0283637d1cd1f7?language=pt-BR&experience=power-bi"target="_blank">Ver detalhes</a>
+                <p>Monitoramento de indicadores OTIF (On Time in Full) e análise de eficiência de distribuição regional.</p>
+                <a href="#" target="_blank">Ver detalhes</a>
             </div>
 
             <div class="project-card">
                 <img src="img/imagens/Dashboard Financeiro v1 1.png" alt="Dashboard Financeiro" class="project-image">
                 <h3>DASHBOARD FINANCEIRO</h3>
-                <p>Monitoramento de faturamento, vendas e desempenho por loja para análise de resultados e ajustes estratégicos.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ1MzcxNTktMDE5MS00OGQ1LTk5NWEtODgzMjdmMWRmOTgzIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9"target="_blank">Ver detalhes</a>
+                <p>Análise exploratória de dados financeiros para suporte a decisões estratégicas e ajustes de faturamento.</p>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ1MzcxNTktMDE5MS00OGQ1LTk5NWEtODgzMjdmMWRmOTgzIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
             </div>
         </div>
         
         <div class="projects-button-container" style="margin-top: 40px;">
-    <a href="projetos.html" target="_blank" class="projects-button">
-        Ver todos os projetos
-        <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i>
-    </a>
-</div>
+            <a href="projetos.html" target="_blank" class="projects-button">
+                Ver todos os projetos (Scripts Python/ETL)
+                <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i>
+            </a>
+        </div>
     </section>
 
     <section id="servicos">
-        <h2>Os serviços que eu ofereço:</h2>
+        <h2>Soluções</h2>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon-container">
-                    <img src="img/imagens/Dashboard-figma.png" alt="Ícone de Dashboard" class="service-icon">
+                    <img src="img/imagens/Dashboard-figma.png" alt="Dashboard" class="service-icon">
                 </div>
                 <div class="service-text-container">
-                    <h3>DESENVOLVIMENTO DE DASHBOARDS</h3>
-                    <p>Elaboração de dashboards personalizados no Power BI para suportar negócios.</p>
+                    <h3>DATA SCIENCE & ANALYTICS</h3>
+                    <p>Transformação de dados brutos em inteligência preditiva e dashboards de Business Intelligence.</p>
                 </div>
             </div>
             <div class="service-card">
                 <div class="service-icon-container">
-                    <img src="img/imagens/search-figma.png" alt="Ícone de Consultoria" class="service-icon">
+                    <img src="img/imagens/search-figma.png" alt="Consultoria" class="service-icon">
                 </div>
                 <div class="service-text-container">
-                    <h3>CONSULTORIA NA ÁREA DE DADOS</h3>
-                    <p>Consultoria para implementação de Power BI em empresas e resolução de problemas.</p>
+                    <h3>OTIMIZAÇÃO DE PROCESSOS</h3>
+                    <p>Consultoria técnica para automação de fluxos de dados e implementação de cultura Data-Driven.</p>
                 </div>
             </div>
         </div>
@@ -240,7 +214,7 @@
 </main>
 
 <footer>
-    <h2>Como você pode entrar em contato comigo:</h2>
+    <h2>Vamos conversar?</h2>
     <div class="contact-info">
         <a href="https://www.linkedin.com/in/Pedro-lucass" target="_blank" class="contact-item">
             <i class="fa-brands fa-linkedin"></i>
@@ -254,22 +228,20 @@
 </footer>
 
 <script>
+    /* Mantive o seu script de smooth scroll original */
     function smoothScroll(targetSelector, duration) {
         const target = document.querySelector(targetSelector);
         if (!target) return;
-
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
         const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
         let startTime = null;
-
         function easeInOutQuad(t, b, c, d) {
             t /= d / 2;
             if (t < 1) return c / 2 * t * t + b;
             t--;
             return -c / 2 * (t * (t - 2) - 1) + b;
         }
-
         function animation(currentTime) {
             if (startTime === null) startTime = currentTime;
             const timeElapsed = currentTime - startTime;
@@ -277,7 +249,6 @@
             window.scrollTo(0, run);
             if (timeElapsed < duration) requestAnimationFrame(animation);
         }
-
         requestAnimationFrame(animation);
     }
 
@@ -289,9 +260,9 @@
         });
     });
 
-    const projectsButton = document.querySelector('.projects-button[href^="#"]');
-    if(projectsButton) {
-        projectsButton.addEventListener('click', function(e) {
+    const projectsBtn = document.querySelector('.projects-button[href^="#"]');
+    if(projectsBtn) {
+        projectsBtn.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             smoothScroll(targetId, 1000);
