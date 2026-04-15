@@ -1,101 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos - Pedro Cruz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
+<div class="project-grid">
 
-<header class="hero-section">
-    <div class="hero-container">
-        <div class="profile-picture-container">
-            <img src="./img/imagens/perfil.jpeg" alt="Foto de Perfil">
-        </div>
-        <div class="intro-text-container">
-            <p class="greeting">oi! Meu nome é</p>
-            <h1>Pedro Cruz</h1>
-            <p class="job-title">Cientista de Dados | Business Intelligence | CRM</p>
-            <p>Desenvolvo dashboards interativos, análises exploratórias de dados (EDA), automações de processos e integrações com LLMs para otimizar a tomada de decisão em diferentes áreas de negócio.</p>
-            
-            <p style="background: rgba(59, 130, 246, 0.1); padding: 12px; border-left: 4px solid #3B82F6; margin-top: 15px; font-size: 0.9rem; color: #BFDBFE;">
-                <i class="fa-solid fa-rocket"></i> Focado em otimizar resultados através da Ciência de Dados. Tenho grande facilidade e vontade para aprender novas tecnologias, escalar modelos e me adaptar ao que a vaga exigir.
-            </p>
-
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="index.html#sobre-mim"><i class="fa-solid fa-user"></i> Sobre mim</a></li>
-                    <li><a href="index.html#projetos"><i class="fa-solid fa-briefcase"></i> Projetos</a></li>
-                    <li><a href="index.html#servicos"><i class="fa-solid fa-chart-line"></i> Serviços</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="project-card">
+        <img src="img/imagens/Case-isaac.png" alt="Churn Analytics" class="project-image">
+        <h3>ANÁLISE PREDITIVA DE MATRÍCULAS</h3>
+        <p>Modelo de monitoramento preventivo de churn/evasão escolar. Utilização de dados históricos para identificar alunos em risco e apoiar a retenção (Case Isaac).</p>
+        <a href="#" target="_blank">Ver detalhes</a>
     </div>
-</header>
 
-<main>
-    <section id="habilidades-data-science" style="padding: 40px 0; text-align: center; border-bottom: 1px solid #374151;">
-        <h2 class="section-title">Ciência de Dados & IA</h2>
-        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
-            <span style="background: #1F2937; border: 1px solid #3B82F6; padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;"><i class="fa-brands fa-python" style="color: #60A5FA;"></i> Python (Pandas & Scikit-learn)</span>
-            <span style="background: #1F2937; border: 1px solid #3B82F6; padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;"><i class="fa-solid fa-magnifying-glass-chart" style="color: #60A5FA;"></i> Análise Exploratória (EDA)</span>
-            <span style="background: #1F2937; border: 1px solid #3B82F6; padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;"><i class="fa-solid fa-robot" style="color: #60A5FA;"></i> Básico em LLMs & IA Generativa</span>
-            <span style="background: #1F2937; border: 1px solid #3B82F6; padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;"><i class="fa-solid fa-database" style="color: #60A5FA;"></i> SQL & BigQuery</span>
-        </div>
-    </section>
+    <div class="project-card">
+        <img src="img/imagens/gerfin.png" alt="Bot Silver" class="project-image">
+        <h3>BOT SILVER: IA NO CRM</h3>
+        <p>Implementação de chatbot inteligente integrado ao CRM para automação de respostas, reduzindo drasticamente o tempo de atendimento ao cliente.</p>
+        <a href="#" target="_blank">Ver detalhes</a>
+    </div>
 
-    <section id="todos-os-projetos">
-        <h2 class="section-title">Todos os Projetos</h2>
-        <div class="project-grid">
+    <div class="project-card">
+        <img src="img/imagens/Excel-VBA.webp" alt="Pipeline EDA" class="project-image">
+        <h3>PIPELINE DE EDA & AUTOMAÇÃO</h3>
+        <p>Refatoração de bases legadas e unificação de dados desestruturados via Python, garantindo integridade para decisões de alta gestão.</p>
+        <a href="https://github.com/shadowssplz/Portifolio_Analytics" target="_blank">Ver detalhes</a>
+    </div>
 
-            <div class="project-card">
-                <img src="img/imagens/dashboard_comercial 1.png" alt="Dashboard Comercial" class="project-image">
-                <h3>DASHBOARD COMERCIAL</h3>
-                <p>Acompanhar a receita ao longo do tempo, mostrar o desempenho por lojas, a fim de entendermos melhor como o aplicativo se comporta.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiY2NjNDg1ZmQtZmYxMC00MDhhLTllNDYtZjJiNjE1ZTBiNWU0IiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
-            </div>
-
-            <div class="project-card">
-                <img src="img/imagens/Dashboard_Logistica 1.png" alt="Dashboard de Logística" class="project-image">
-                <h3>DASHBOARD DE LOGÍSTICA</h3>
-                <p>Monitorar os indicadores OTIF (On Time in Full) ao longo do tempo e performance regional das lojas.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiNTI0MGY3ZTgtYTg4YS00Y2FlLTg4NDktNWMyYTM0ZWEyNTIxIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
-            </div>
-
-            <div class="project-card">
-                <img src="img/imagens/Dashboard Financeiro v1 1.png" alt="Dashboard Financeiro" class="project-image">
-                <h3>DASHBOARD FINANCEIRO</h3>
-                <p>Monitoramento de faturamento, vendas e desempenho por loja para análise de resultados e ajustes estratégicos.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ1MzcxNTktMDE5MS00OGQ1LTk5NWEtODgzMjdmMWRmOTgzIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
-            </div>
-
-            <div class="project-card">
-                <img src="img/imagens/Case-isaac.png" alt="Dashboard de Engajamento de Matrículas" class="project-image">
-                <h3>ENGAGEMENT ANALYTICS</h3>
-                <p>Monitoramento de Engajamento de Matrículas 2025. Análise preventiva de dados para identificação de oportunidades em escolas.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiYWY3MGJlM2ItNjRjNy00NDVlLWFkMTktNzhlMjYwNDk1ZjcxIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
-            </div>
-
-            <div class="project-card">
-                <img src="img/imagens/Excel-VBA.webp" alt="Script de ETL de Operações" class="project-image">
-                <h3>ETL & DATA QUALITY SCRIPT</h3>
-                <p>Análise exploratória para detecção de anomalias e higienização de dados em bases de CRM, visando melhorar a qualidade da informação.</p>
-                <a href="https://github.com/shadowssplz/Portifolio_Analytics/blob/main/SCRIPT%20DE%20ETL%20DE%20OPERA%C3%87%C3%95ES" target="_blank">Ver detalhes</a>
-            </div>
-
-            <div class="project-card">
-                <img src="img/imagens/gerfin.png" alt="Script de Automação e Extração" class="project-image">
-                <h3>EDA & PIPELINE DE AUTOMAÇÃO</h3>
-                <p>Refatoração de bases legadas e unificação de dados sem padronização, utilizando Python para análise exploratória e extração eficiente.</p>
-                <a href="https://github.com/shadowssplz/Portifolio_Analytics/blob/main/SCRIPT%20DE%20AUTOMA%C3%87%C3%83O%20EXTRA%C3%87%C3%83O" target="_blank">Ver detalhes</a>
-            </div>
-
-        </div>
-    </section>
-</main>
-
-</body>
-</html>
+    <div class="project-card">
+        <img src="img/imagens/dashboard_comercial 1.png" alt="Dashboard Comercial" class="project-image">
+        <h3>DASHBOARD ESTRATÉGICO COMERCIAL</h3>
+        <p>Visualização de KPIs críticos e monitoramento de mercado para suporte à tomada de decisão executiva.</p>
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiY2NjNDg1ZmQtZmYxMC00MDhhLTllNDYtZjJiNjE1ZTBiNWU0IiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver Dashboard</a>
+    </div>
+</div>
