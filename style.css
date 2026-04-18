@@ -238,36 +238,39 @@ main h2::before {
     box-shadow: 0 0 10px var(--primary);
 }
 
+/* Ajuste no Header da Timeline para espaçamento correto */
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
 .experience-header h3 {
     margin: 0;
     color: var(--text-light);
     font-size: 1.25rem;
+    flex: 1 1 auto;
+    padding-right: 15px;
 }
 
 .experience-dates {
     display: inline-block;
     font-size: 0.9rem;
     color: var(--accent);
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 2px;
     font-weight: 500;
     background: rgba(59, 130, 246, 0.1);
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
-.experience-description ul {
-    padding-left: 20px;
+.experience-description p {
+    margin-top: 10px;
     color: var(--text-muted);
     line-height: 1.6;
-}
-
-.experience-description li {
-    margin-bottom: 8px;
-}
-
-.experience-description strong {
-    color: var(--text-main);
 }
 
 /* --- GRADE DE HABILIDADES --- */
@@ -297,11 +300,13 @@ main h2::before {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.skill-icon {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 15px;
-    object-fit: contain;
+/* Animação dos ícones do FontAwesome */
+.skill-card i {
+    transition: var(--transition);
+}
+
+.skill-card:hover i {
+    transform: translateY(-5px) scale(1.1);
 }
 
 .skill-card h3 {
@@ -531,6 +536,12 @@ footer h2 {
     
     .experience-years {
         font-size: 4rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 
     .service-card {
