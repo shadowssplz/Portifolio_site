@@ -7,29 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        /* Ajuste global para garantir que ícones de diferentes proporções não distorçam */
-        .skill-icon {
-            object-fit: contain;
-            background-color: transparent;
-        }
-
-        /* Ajuste para centralizar os blocos "órfãos" da última linha */
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Centraliza os itens horizontalmente */
-            gap: 20px; /* Mantém o espaçamento entre os cards */
-        }
-
-        .skill-card {
-            flex: 0 1 280px; 
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centraliza o conteúdo dentro do card */
-            text-align: center;
-        }
-
-        /* Destaque para a frase de evolução */
+        .skill-icon { object-fit: contain; background-color: transparent; }
+        .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .skill-card { flex: 0 1 280px; display: flex; flex-direction: column; align-items: center; text-align: center; }
         .evolution-badge {
             background: rgba(59, 130, 246, 0.15);
             padding: 12px;
@@ -49,7 +29,7 @@
             <img src="./img/imagens/perfil.jpeg" alt="Foto de Perfil">
         </div>
         <div class="intro-text-container">
-            <p class="greeting">Oi! Meu nome é</p>
+            <p class="greeting">oi! Meu nome é</p>
             <h1>Pedro Cruz</h1>
             <p class="job-title">Cientista de Dados | BI & CRM Intelligence</p>
             <p>Desenvolvo dashboards interativos, análises exploratórias de dados (EDA), automações de processos e integrações com LLMs para otimização de negócios.</p>
@@ -79,27 +59,20 @@
         <div class="experience-container">
             <div class="experience-years">4+</div>
             <div class="experience-details">
-                <p> Anos atuando como Cientista de Dados e Analista de BI com experiência em estruturação de dados e automação de processos. Especialista em transformar grandes volumes de dados brutos em insights estratégicos através de Análise Exploratória (EDA), modelagem SQL e Python. Experiência sólida em integração de LLMs para otimização de fluxos de CRM e marketing. Perfil autodidata, com foco em otimização de algoritmos e escala de resultados.</p>
+                <p>Cientista de Dados e Analista de BI com mais de 4 anos de experiência na estruturação de dados e automação. Graduando em <strong>Ciência da Computação pelo IFCE</strong>, sou especialista em transformar grandes volumes de dados brutos em insights estratégicos através de EDA, modelagem SQL e Python. Experiência sólida em integração de <strong>LLMs para otimização de fluxos</strong>.</p>
             </div>
         </div>
 
         <div class="experience-section">
             <h2>Experiência Profissional</h2>
-            <p class="section-subtitle">Minha trajetória focada em transformar dados em inteligência estratégica:</p>
-            
             <div class="experience-timeline">
-                
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Analista de Dados (Tráfego Pago) | E2M Assessoria - PJ</h3>
+                        <h3>Analista de Dados (Tráfego Pago) | E2M Assessoria</h3>
                         <span class="experience-dates">Jul. 2025 - Atual</span>
                     </div>
                     <div class="experience-description">
-                        <ul>
-                            <li>Estruturação de pipelines de ETL para consolidação de dados de múltiplas fontes (Ads, Hotmart, TikTok).</li>
-                            <li>Desenvolvimento de modelos de análise de funil para otimização de investimentos em tráfego pago.</li>
-                            <li>Criação de dashboards preditivos para acompanhamento de KPIs em tempo real.</li>
-                        </ul>
+                        <p>Estruturação de pipelines de dados e dashboards para monitoramento de performance de anúncios (Meta/Google Ads), focando em ROAS e eficiência de conversão.</p>
                     </div>
                 </div>
 
@@ -109,101 +82,50 @@
                         <span class="experience-dates">Out. 2024 - Mar. 2025</span>
                     </div>
                     <div class="experience-description">
-                        <ul>
-                            <li>Segmentação avançada de bases via Python/SQL (ERP Mercafácil) para campanhas de conversão, retenção e cross-sell via SMS.</li>
-                            <li>Modelagem de comportamento do consumidor para otimização de encartes de venda baseada em correlação de produtos.</li>
-                            <li>Liderança técnica em projetos de Business Intelligence e visualização de dados para suporte à decisão.</li>
-                        </ul>
+                        <p>Liderança técnica em projetos de BI e ETL. Desenvolvimento de análises preditivas para identificação de tendências de mercado e redução de churn.</p>
                     </div>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Analista de CRM & Customer Intelligence | GEN (Grupo Editorial Nacional)</h3>
-                        <span class="experience-dates">Out. 2023 - Jun. 2024</span>
+                        <h3>Hunter PJ (Automação) | SomosSilver</h3>
+                        <span class="experience-dates">Jul. 2024 - Nov. 2024</span>
                     </div>
                     <div class="experience-description">
-                        <ul>
-                            <li>Implementação de réguas de relacionamento e automações no Salesforce Marketing Cloud, otimizando o ciclo de vida do cliente.</li>
-                            <li>Data Warehouse & ETL: Extração e tratamento de dados brutos para criação de relatórios de performance e dashboards.</li>
-                            <li>Segmentação de Público: Aplicação de lógica avançada para campanhas de e-mail marketing e análises diagnósticas de comportamento.</li>
-                        </ul>
+                        <p>Desenvolvimento de bots e automações via n8n para otimizar o tempo de resposta e estruturação de bases de dados para remarketing.</p>
                     </div>
                 </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Freelancer & Projetos Estratégicos | Autônomo</h3>
-                        <span class="experience-dates">2022 - 2024</span>
-                    </div>
-                    <div class="experience-description">
-                        <ul>
-                            <li><strong>Workflow Automation & Bot Silver:</strong> Integração de sistemas e tratamento de dados para automação de atendimento, reduzindo o tempo de resposta em 40 segundos e aumentando a conversão.</li>
-                            <li>Desenvolvimento de bots Python para automação de extração de dados e marketing, reativando 20% da base de clientes inativos.</li>
-                            <li>Consultoria BI: Implementação de cultura Data-Driven através de dashboards personalizados.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Analista de Business Intelligence | LL Loyalty</h3>
-                        <span class="experience-dates">Mar. 2022 - Jun. 2023</span>
-                    </div>
-                    <div class="experience-description">
-                        <ul>
-                            <li>Responsável pelo ciclo completo de dados (Coleta, Higienização ETL e Análise) de KPIs críticos para alta gestão.</li>
-                            <li>Desenvolvimento de dashboards interativos para monitoramento de mercado e tendências da concorrência.</li>
-                            <li>Liderança na homologação de erros e documentação, reduzindo o tempo de processamento de insights internos.</li>
-                            <li>Realização de análises preditivas básicas e estudos de tendências para identificar novas oportunidades de negócio.</li>
-                        </ul>
-                    </div>
-                </div>
-                
             </div>
         </div>
 
-        <h2>Habilidades Técnicas</h2>
+        <h2>Principais habilidades</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <img src="img/imagens/Excel figma.png" alt="Linguagens de Programação" class="skill-icon">
-                <h3>LINGUAGENS</h3>
-                <p>Python (Pandas, Scikit-learn, Numpy), SQL (PostgreSQL, BigQuery), VBA.</p>
+                <i class="fa-brands fa-python fa-3x" style="color: #3B82F6; margin-bottom: 15px;"></i>
+                <h3>DATA SCIENCE & EDA</h3>
+                <p>Análise exploratória e modelagem estatística com Python (Pandas, Scikit-learn) e SQL.</p>
             </div>
             <div class="skill-card">
-                <img src="img/imagens/grafic figma.png" alt="Data Science" class="skill-icon">
-                <h3>DATA SCIENCE</h3>
-                <p>Análise Exploratória (EDA), Machine Learning Pipelines, Modelagem Estatística, Engenharia de Features.</p>
+                <i class="fa-solid fa-robot fa-3x" style="color: #3B82F6; margin-bottom: 15px;"></i>
+                <h3>IA & AUTOMAÇÃO</h3>
+                <p>Integração de LLMs, criação de prompts e workflows no n8n para escala de processos.</p>
             </div>
             <div class="skill-card">
-                <img src="img/imagens/n8n figma.png" alt="Cloud e Ferramentas" class="skill-icon n8n-icon">
-                <h3>FERRAMENTAS & CLOUD</h3>
-                <p>Google Cloud Platform (GCP), BigQuery, n8n, Google Apps Script.</p>
+                <i class="fa-solid fa-database fa-3x" style="color: #3B82F6; margin-bottom: 15px;"></i>
+                <h3>ENGENHARIA & ETL</h3>
+                <p>SQL (PostgreSQL, BigQuery), Google Cloud Platform (GCP) e higienização de dados.</p>
             </div>
             <div class="skill-card">
-                <img src="img/imagens/Design figma.png" alt="Visualização" class="skill-icon">
+                <i class="fa-solid fa-chart-column fa-3x" style="color: #3B82F6; margin-bottom: 15px;"></i>
                 <h3>VISUALIZAÇÃO</h3>
-                <p>Power BI (DAX/M), Looker Studio, Figma (UI/UX para Dashboards).</p>
+                <p>Design de dashboards de alto impacto no Power BI e Figma para KPIs críticos.</p>
             </div>
-            <div class="skill-card">
-                <img src="img/imagens/Dashboard-figma.png" alt="Domínios de Negócio" class="skill-icon">
-                <h3>DOMÍNIOS</h3>
-                <p>CRM Marketing, Tráfego Pago (Meta/Google Ads), ETL de Operações, LGPD.</p>
-            </div>
-        </div>
-        
-        <div class="projects-button-container" style="margin-top: 40px;">
-            <a href="#projetos" class="projects-button">
-                <i class="fa-solid fa-eye"></i>
-                Clique aqui para visualizar os meus projetos
-            </a>
         </div>
     </section>
 
     <section id="projetos">
         <h2>Projetos em Destaque</h2>
         <div class="project-grid">
-
             <div class="project-card">
                 <img src="img/imagens/dashboard_comercial 1.png" alt="Dashboard Comercial" class="project-image">
                 <h3>DASHBOARD COMERCIAL</h3>
@@ -211,49 +133,18 @@
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiY2NjNDg1ZmQtZmYxMC00MDhhLTllNDYtZjJiNjE1ZTBiNWU0IiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
             </div>
 
-           <div class="project-card">
-               <img src="img/imagens/Dashboard_Logistica 1.png" alt="Dashboard de Logística" class="project-image">
-               <h3>DASHBOARD DE LOGÍSTICA</h3>
-               <p>Monitorização de indicadores OTIF (On Time in Full) e análise de eficiência de distribuição regional para otimização de entregas.</p>
-               <a href="https://app.powerbi.com/view?r=eyJrIjoiNTI0MGY3ZTgtYTg4YS00Y2FlLTg4NDktNWMyYTM0ZWEyNTIxIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
-           </div>>
+            <div class="project-card">
+                <img src="img/imagens/Dashboard_Logistica 1.png" alt="Dashboard de Logística" class="project-image">
+                <h3>DASHBOARD DE LOGÍSTICA</h3>
+                <p>Monitoramento de indicadores OTIF (On Time in Full) e análise de eficiência de distribuição regional.</p>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNTI0MGY3ZTgtYTg4YS00Y2FlLTg4NDktNWMyYTM0ZWEyNTIxIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
+            </div>
 
             <div class="project-card">
                 <img src="img/imagens/Dashboard Financeiro v1 1.png" alt="Dashboard Financeiro" class="project-image">
                 <h3>DASHBOARD FINANCEIRO</h3>
-                <p>Análise exploratória de dados financeiros para suporte a decisões estratégicas e ajustes de faturamento.</p>
+                <p>Análise exploratória de dados financeiros para suporte a decisões estratégicas e faturamento.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ1MzcxNTktMDE5MS00OGQ1LTk5NWEtODgzMjdmMWRmOTgzIiwidCI6IjY2NTQyOTJmLTVmYmEtNDYzNy04YTVmLTE3NWEwNzljMjU0YyJ9" target="_blank">Ver detalhes</a>
-            </div>
-        </div>
-        
-        <div class="projects-button-container" style="margin-top: 40px;">
-            <a href="projetos.html" target="_blank" class="projects-button">
-                Ver todos os projetos (Scripts Python/ETL)
-                <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i>
-            </a>
-        </div>
-    </section>
-
-    <section id="servicos">
-        <h2>Soluções</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon-container">
-                    <img src="img/imagens/Dashboard-figma.png" alt="Dashboard" class="service-icon">
-                </div>
-                <div class="service-text-container">
-                    <h3>DATA SCIENCE & ANALYTICS</h3>
-                    <p>Transformação de dados brutos em inteligência preditiva e dashboards de Business Intelligence.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon-container">
-                    <img src="img/imagens/search-figma.png" alt="Consultoria" class="service-icon">
-                </div>
-                <div class="service-text-container">
-                    <h3>OTIMIZAÇÃO DE PROCESSOS</h3>
-                    <p>Consultoria técnica para automação de fluxos de dados e implementação de cultura Data-Driven.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -263,18 +154,15 @@
     <h2>Vamos conversar?</h2>
     <div class="contact-info">
         <a href="https://www.linkedin.com/in/Pedro-lucass" target="_blank" class="contact-item">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>/Pedro-lucass</span>
+            <i class="fa-brands fa-linkedin"></i> <span>/Pedro-lucass</span>
         </a>
         <a href="mailto:Plucascruzoffice@gmail.com" class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Plucascruzoffice@gmail.com</span>
+            <i class="fa-solid fa-envelope"></i> <span>Plucascruzoffice@gmail.com</span>
         </a>
     </div>
 </footer>
 
 <script>
-    /* Script de smooth scroll original */
     function smoothScroll(targetSelector, duration) {
         const target = document.querySelector(targetSelector);
         if (!target) return;
@@ -297,24 +185,12 @@
         }
         requestAnimationFrame(animation);
     }
-
     document.querySelectorAll('.main-nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href');
-            smoothScroll(targetId, 1000);
+            smoothScroll(this.getAttribute('href'), 1000);
         });
     });
-
-    const projectsBtn = document.querySelector('.projects-button[href^="#"]');
-    if(projectsBtn) {
-        projectsBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            smoothScroll(targetId, 1000);
-        });
-    }
 </script>
-
 </body>
 </html>
